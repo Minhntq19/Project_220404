@@ -40,3 +40,6 @@ insert into Comments(CommentID,Content,Statuss,CreateTime,Author,Email,PostID) v
 insert into Comments(CommentID,Content,Statuss,CreateTime,Author,Email,PostID) values (2,'hellos',1,28-07-2022,'Minhs','123s@gmail.com',2)
 insert into Comments(CommentID,Content,Statuss,CreateTime,Author,Email,PostID) values (3,'hellosss',1,28-07-2022,'Minhss','123ss@gmail.com',3)
 select *from Posts where Tag='Social'
+select *from Comments Where Email = 'abc@gmail.com';
+select count (CommentID) From Comments
+CREATE VIEW v_NewPost AS SELECT Title, Username, CreateTime FROM Posts, Users
